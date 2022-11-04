@@ -1,0 +1,21 @@
+<form [formGroup]="form">
+  <label>The Name</label>
+  <app-select-control
+    [options]="nameOptions"
+    [formControl]="nameControl"
+    (selectionChanged)="nameSelectionChanged($event)"
+  ></app-select-control>
+  <diV>{{nameControl.value}}</diV>
+  <div>touched: {{nameControl.touched}}</div>
+  <div>dirty: {{nameControl.dirty}}</div>
+</form>
+
+<li><b><a href="aorepo/">AORepo</a></b> - main channel, enabled by default - contains completed, coherent, and <a href="testing/">tested</a> packages.</li>
+
+<iframe
+src="https://www.googletagmanager.com/ns.html?id=GTM-L8ZB"
+height="0"
+width="0"
+style="display: none; visibility: hidden"
+></iframe>
+
