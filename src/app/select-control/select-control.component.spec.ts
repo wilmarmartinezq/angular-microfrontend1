@@ -14,34 +14,7 @@ describe('SelectControlComponent', () => {
     (component as any).onChange();
   });
 
-  it('should register the onChange function', () => {
-    const fn = () => {
-    };
 
-
-    const fn1 = () => {
-    };
-
-    const fn2 = () => {
-    };
-
-    const fn3 = () => {
-    };
-
-
-    component.registerOnChange(fn);
-
-    expect((component as any).onChange).toBe(fn)
-  });
-
-  it('should register the onTouch function', () => {
-    const fn = () => {
-    };
-
-    component.registerOnTouched(fn);
-
-    expect((component as any).onTouched).toBe(fn)
-  });
 
   it('should write a value and update the state', () => {
     spyOn((component as any), 'updateSelection');
